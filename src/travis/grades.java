@@ -16,55 +16,79 @@ public class grades {
 			//for loop for entering students 
 				for (int counter=students; counter > 0; counter--){
 		
-		
-					System.out.println("How many grades will you be entering for this student?");
+					
+					input.nextLine();
+					
+					String name = input.nextLine();
+					
+					
+					System.out.println("How many grades will you be entering for " + name +  "?");
 		
 					int grades = input.nextInt();
 					
-					int counter2= grades;
+					int counter2;
 					
 					int total = 0;
 					
 					int isayso = grades;
+				
 		
-					//while loop for entering grades
-						while (grades > 0){
+					//for loop for entering grades
 					
-							System.out.println("Enter grades now....");
+					
+					
+					for (counter2 = grades; counter2 > 0; counter2--){
+					
+							System.out.println("Enter next grade now....");
 			
 							int grade = input.nextInt();
 			
-							total= total + grade;
+							total = total + grade;
 			
-							grades--;
+							
 			
-		
 		
 	}
+					
+					;
 		//the average of all grades with a corresponding letter grade for each
 		int average = total / isayso;
 		
 		
+		
+		
+		
+		
+		
+		
+		
 		if (average >= 90){
-			System.out.println("This student gets an A (This student's average was " + average+ ")");
+			System.out.println(name +"\t\tA (" +average+ ")");
 		}
 		else if(average >=80){
-			System.out.println("This student gets a B (This student's average was " + average+ ")");
+			System.out.println(name +"\t\tB (" +average+ ")");
 		}
 		else if(average >=70){
-			System.out.println("This student gets a C (This student's average was " + average+ ")");
+			System.out.println(name +"\t\tC (" +average+ ")");
 		}
 		else if(average >=60){
-			System.out.println("This student gets a D (This student's average was " + average+ ")");
+			System.out.println(name +"\t\tD (" + average+ ")");
 		}
 		else 
-			System.out.println("This student gets a F (This student's average was " + average+ ")");
+			System.out.println(name +"\t\tF ( " + average+ ")");
 		
 		
-		
+					
 	
-	}
-		System.out.println("Thank you for using the Travis Way Grade Calculator Application");
+	
+				}		
+				
+				
+				
+				System.out.println("\n");
+				System.out.println("\n");
+				System.out.println("\n");
+				System.out.println("Thank you for using the Travis Way Grade Calculator Application");
 	}
 	
 }
