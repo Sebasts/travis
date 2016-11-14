@@ -16,6 +16,7 @@ public class grades {
 			//for loop for entering students 
 				for (int counter=students; counter > 0; counter--){
 		
+					System.out.println("Enter the next student's name");
 					
 					input.nextLine();
 					
@@ -58,6 +59,7 @@ public class grades {
 		
 		
 		
+		System.out.println("Student Name\t\tAverage");
 		
 		
 		
